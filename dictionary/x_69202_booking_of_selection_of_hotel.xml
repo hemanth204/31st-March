@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Selection of Hotel" max_length="40" name="x_69202_booking_of_selection_of_hotel" type="collection">
+        <element label="Address" max_length="40" name="address" type="string"/>
+        <element label="City" max_length="32" name="city" reference="x_69202_booking_of_list_of_cities" type="reference"/>
+        <element label="Fare" max_length="40" name="fare" type="integer"/>
+        <element label="Hotel" max_length="32" name="hotel" reference="x_69202_booking_of_list_of_hotels" type="reference"/>
+        <element label="State" max_length="32" name="state" reference="x_69202_booking_of_list_of_states" type="reference"/>
+        <index name="index">
+            <element name="city"/>
+        </index>
+        <index name="index2">
+            <element name="hotel"/>
+        </index>
+        <index name="index3">
+            <element name="state"/>
+        </index>
+    </element>
+</database>

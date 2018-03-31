@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_69202_booking_of_list_of_hotels" version="2" view="sys_ref_list">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>hotel_name</element>
+            <list_id display_value="x_69202_booking_of_list_of_hotels" element="NULL" name="x_69202_booking_of_list_of_hotels" parent="NULL" relationship="NULL" sys_domain="global" view="3976271090300300a21c513b6aad7680">5a2f15c5db011300351059d0cf96192c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-03-23 00:57:29</sys_created_on>
+            <sys_id>562f15c5db011300351059d0cf96192d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-03-23 00:57:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_69202_booking_of_list_of_hotels</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-03-23 00:57:29</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5a2f15c5db011300351059d0cf96192c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_69202_booking_of_list_of_hotels</sys_name>
+            <sys_package display_value="Booking of Hotel" source="x_69202_booking_of">906bdd81db011300351059d0cf9619c9</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Booking of Hotel">906bdd81db011300351059d0cf9619c9</sys_scope>
+            <sys_update_name>sys_ui_list_x_69202_booking_of_list_of_hotels_sys_ref_list</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-03-23 00:57:29</sys_updated_on>
+            <sys_user/>
+            <view display_value="Reference List" name="sys_ref_list">3976271090300300a21c513b6aad7680</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

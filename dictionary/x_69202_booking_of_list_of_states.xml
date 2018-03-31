@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="List of States" max_length="40" name="x_69202_booking_of_list_of_states" type="collection">
+        <element display="true" label="States" max_length="40" name="states" type="string"/>
+    </element>
+</database>

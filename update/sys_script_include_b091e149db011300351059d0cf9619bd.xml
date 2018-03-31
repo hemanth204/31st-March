@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_69202_booking_of.hotel_selection</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>hotel_selection</name>
+        <script><![CDATA[var hotel_selection = Class.create();
+hotel_selection.prototype = {
+    initialize: function() {
+    },
+hotel:function(){
+	var ht=' ';
+	var state=current.select_state;
+	var tab=new GlideRecord('x_69202_booking_of_selection_of_hotel');
+	tab.addQuery('state', state);
+	tab.query();
+	while(tab.next()){
+		ht+=(',' +tab.city.toString());
+			}
+	return 'sys_idIN' +ht;
+},
+	selection:function(){
+		var sel = ' ';
+		var city=current.select_city;
+		var tab=new GlideRecord('x_69202_booking_of_selection_of_hotel');
+		tab.addQuery('city',city);
+		tab.query();
+		while(tab.next()){
+			sel+=(',' +tab.hotel.toString());
+		}
+		return 'sys_idIN' +sel;
+	},
+    type: 'hotel_selection'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-23 01:14:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b091e149db011300351059d0cf9619bd</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>hotel_selection</sys_name>
+        <sys_package display_value="Booking of Hotel" source="x_69202_booking_of">906bdd81db011300351059d0cf9619c9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Booking of Hotel">906bdd81db011300351059d0cf9619c9</sys_scope>
+        <sys_update_name>sys_script_include_b091e149db011300351059d0cf9619bd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-25 01:36:53</sys_updated_on>
+    </sys_script_include>
+</record_update>

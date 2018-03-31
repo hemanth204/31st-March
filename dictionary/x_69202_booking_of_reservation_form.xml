@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Reservation form" max_length="40" name="x_69202_booking_of_reservation_form" type="collection">
+        <element label="Address" max_length="40" name="address" type="string"/>
+        <element label="Date of Accomodation?" max_length="40" name="date_of_accomodation" type="glide_date_time"/>
+        <element label="Fare" max_length="40" name="fare" read_only="true" type="integer"/>
+        <element label="Name of the customer" max_length="40" name="name_of_the_customer" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Select City" max_length="32" name="select_city" reference="x_69202_booking_of_list_of_cities" reference_qual="javascript:new hotel_selection().hotel()" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Select Hotel" max_length="32" name="select_hotel" reference="x_69202_booking_of_list_of_hotels" reference_qual="javascript:new hotel_selection().selection()" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Select State" max_length="32" name="select_state" reference="x_69202_booking_of_list_of_states" type="reference"/>
+        <index name="index">
+            <element name="select_city"/>
+        </index>
+        <index name="index2">
+            <element name="select_hotel"/>
+        </index>
+        <index name="index3">
+            <element name="select_state"/>
+        </index>
+    </element>
+</database>

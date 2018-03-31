@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_69202_booking_of.Fare_details</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>Fare_details</name>
+        <script><![CDATA[var Fare_details = Class.create();
+Fare_details.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	fare:function(){
+		var price_details=' ';
+		var price=this.getParameter('sysparm_fare');
+		gs.info("CLient value"+price);
+		var hotel=new GlideRecord('x_69202_booking_of_selection_of_hotel');
+		hotel.addQuery('hotel.hotel_name',price);
+		hotel.query();
+		while(hotel.next()){
+			gs.info("inside");
+			price_details=hotel.fare;
+			gs.info("Price is"+price_details);
+		}
+		return price_details;
+	},
+
+    type: 'Fare_details'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-25 01:34:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>98f47769db895300351059d0cf961923</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Fare_details</sys_name>
+        <sys_package display_value="Booking of Hotel" source="x_69202_booking_of">906bdd81db011300351059d0cf9619c9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Booking of Hotel">906bdd81db011300351059d0cf9619c9</sys_scope>
+        <sys_update_name>sys_script_include_98f47769db895300351059d0cf961923</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-25 01:46:03</sys_updated_on>
+    </sys_script_include>
+</record_update>

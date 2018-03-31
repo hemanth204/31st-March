@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="List of Cities" max_length="40" name="x_69202_booking_of_list_of_cities" type="collection">
+        <element display="true" label="City Name" max_length="40" name="city_name" type="string"/>
+    </element>
+</database>
